@@ -28,11 +28,12 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 
 | Platform | Installer | Size (approx.) |
 |----------|-----------|----------------|
-| **macOS (Apple Silicon)** | [CogniBridge-2026.5.25-arm64.dmg](https://www.bluemomentum.cn/cogni_bridge/release/2026.05.25/CogniBridge-2026.5.25-arm64.dmg) | ~494 MB |
-| **macOS (Intel)** | [CogniBridge-2026.5.25-x64.dmg](https://www.bluemomentum.cn/cogni_bridge/release/2026.05.25/CogniBridge-2026.5.25-x64.dmg) | ~467 MB |
-| **Windows (x64)** | [CogniBridge Setup 2026.5.25.exe](https://www.bluemomentum.cn/cogni_bridge/release/2026.05.25/CogniBridge%20Setup%202026.5.25.exe) | ~487 MB |
+| **macOS (Apple Silicon)** | [CogniBridge-2026.5.25-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge-2026.5.25-arm64.dmg) | ~494 MB |
+| **macOS (Intel)** | [CogniBridge-2026.5.25-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge-2026.5.25-x64.dmg) | ~467 MB |
+| **Windows (x64)** | [CogniBridge.Setup.2026.5.25.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge.Setup.2026.5.25.exe) | ~487 MB |
 
-- **All versions & release notes:** [CogniBridge Downloads](https://www.bluemomentum.cn/cogni_bridge/release/downloads.html)
+- **All versions & release notes:** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
+- **Mirror download page:** [CogniBridge Downloads](https://www.bluemomentum.cn/cogni_bridge/release/downloads.html)
 - **Manifest (automation):** [`versions.json`](https://www.bluemomentum.cn/cogni_bridge/release/versions.json)
 
 **Latest (2026.05.25) highlights**
@@ -107,11 +108,12 @@ After uploading to GitHub Releases, add release asset URLs to `versions.json` (o
 
 | 平台 | 安装包 | 大小（约） |
 |------|--------|------------|
-| **macOS（Apple 芯片）** | [CogniBridge-2026.5.25-arm64.dmg](https://www.bluemomentum.cn/cogni_bridge/release/2026.05.25/CogniBridge-2026.5.25-arm64.dmg) | ~494 MB |
-| **macOS（Intel）** | [CogniBridge-2026.5.25-x64.dmg](https://www.bluemomentum.cn/cogni_bridge/release/2026.05.25/CogniBridge-2026.5.25-x64.dmg) | ~467 MB |
-| **Windows（64 位）** | [CogniBridge Setup 2026.5.25.exe](https://www.bluemomentum.cn/cogni_bridge/release/2026.05.25/CogniBridge%20Setup%202026.5.25.exe) | ~487 MB |
+| **macOS（Apple 芯片）** | [CogniBridge-2026.5.25-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge-2026.5.25-arm64.dmg) | ~494 MB |
+| **macOS（Intel）** | [CogniBridge-2026.5.25-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge-2026.5.25-x64.dmg) | ~467 MB |
+| **Windows（64 位）** | [CogniBridge.Setup.2026.5.25.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge.Setup.2026.5.25.exe) | ~487 MB |
 
-- **全部版本与更新说明：** [CogniBridge 版本下载](https://www.bluemomentum.cn/cogni_bridge/release/downloads.html)  
+- **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)  
+- **镜像下载页：** [CogniBridge 版本下载](https://www.bluemomentum.cn/cogni_bridge/release/downloads.html)  
 - **版本清单（脚本用）：** [`versions.json`](https://www.bluemomentum.cn/cogni_bridge/release/versions.json)
 
 **当前最新版 2026.05.25 更新摘要**
