@@ -33,8 +33,6 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 | **Windows (x64)** | [CogniBridge.Setup.2026.5.25.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge.Setup.2026.5.25.exe) | ~487 MB |
 
 - **All versions & release notes:** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
-- **Mirror download page:** [CogniBridge Downloads](https://www.bluemomentum.cn/cogni_bridge/release/downloads.html)
-- **Manifest (automation):** [`versions.json`](https://www.bluemomentum.cn/cogni_bridge/release/versions.json)
 
 **Latest (2026.05.25) highlights**
 
@@ -74,20 +72,6 @@ Source and build instructions live in the internal `cogni_bridge` application re
 
 Optional agent engine: [OpenClaw](https://github.com/openclaw/openclaw) (version pinned in `package.json` → `openclaw.version`).
 
-### Faster downloads (maintainers)
-
-Installers are ~500 MB each. Hosting only on a single origin ([bluemomentum.cn](https://www.bluemomentum.cn)) can feel slow without a CDN.
-
-**Recommended free setup (pick one primary + keep current site as mirror):**
-
-| Option | Pros | Notes |
-|--------|------|-------|
-| **[GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)** | Free, global CDN, fits files &lt; 2 GB | Attach `.dmg` / `.exe` to tags like `v2026.05.25`; link README to `https://github.com/BlueMomentum/CogniBridge/releases/latest` |
-| **[Cloudflare R2](https://developers.cloudflare.com/r2/)** | Free tier (~10 GB), egress free via Cloudflare | Good if you want your own domain + CDN; upload once, point `versions.json` `baseUrl` to the bucket/public URL |
-| **Gitee Releases** | Often faster in mainland China | Useful as a China mirror; sync the same assets from CI |
-
-After uploading to GitHub Releases, add release asset URLs to `versions.json` (or a second `downloadUrl` field) so [downloads.html](https://www.bluemomentum.cn/cogni_bridge/release/downloads.html) can prefer the faster mirror.
-
 ### License
 
 [MIT License](LICENSE)
@@ -112,9 +96,7 @@ After uploading to GitHub Releases, add release asset URLs to `versions.json` (o
 | **macOS（Intel）** | [CogniBridge-2026.5.25-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge-2026.5.25-x64.dmg) | ~467 MB |
 | **Windows（64 位）** | [CogniBridge.Setup.2026.5.25.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge.Setup.2026.5.25.exe) | ~487 MB |
 
-- **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)  
-- **镜像下载页：** [CogniBridge 版本下载](https://www.bluemomentum.cn/cogni_bridge/release/downloads.html)  
-- **版本清单（脚本用）：** [`versions.json`](https://www.bluemomentum.cn/cogni_bridge/release/versions.json)
+- **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
 **当前最新版 2026.05.25 更新摘要**
 
@@ -155,19 +137,6 @@ After uploading to GitHub Releases, add release asset URLs to `versions.json` (o
 可选 Agent 引擎：[OpenClaw](https://github.com/openclaw/openclaw)，版本见 `package.json` 中 `openclaw.version`。
 
 智桥外贸版（专家 Skill、分层记忆、`zhiqiao_*` 业务库）在 monorepo 的 `experts/` 与 `docs/` 中有单独产品设计说明；本仓库为 **CogniBridge 桌面客户端** 的对外主页与发布入口。
-
-### 下载加速建议（维护者）
-
-当前安装包约 **500 MB**，若仅放在自有服务器且无 CDN，国内/海外用户都可能感觉偏慢。
-
-**建议（免费、统一入口）：**
-
-1. **主站：GitHub Releases** — 将各平台 `.dmg` / `.exe` 上传到 [BlueMomentum/CogniBridge Releases](https://github.com/BlueMomentum/CogniBridge/releases)，README 与 `versions.json` 优先指向 `releases/latest` 资源链接。  
-2. **镜像：保留** [bluemomentum.cn 下载页](https://www.bluemomentum.cn/cogni_bridge/release/downloads.html) 作为备用或国内镜像。  
-3. **可选：Cloudflare R2** — 免费额度 + 全球 CDN，适合自定义域名统一分发。  
-4. **可选：Gitee Releases** — 作为国内补充镜像，与 GitHub 同步同一批文件。
-
-发布流程可在 CI 中 `npm run dist:*` 完成后自动 `gh release upload`，并刷新 `versions.json` 中的 `url` 字段。
 
 ### 许可证
 
