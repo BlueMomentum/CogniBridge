@@ -7,7 +7,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-brightgreen" alt="Platform">
-  <img src="https://img.shields.io/badge/Version-2026.05.25-47848F" alt="Version">
+  <img src="https://img.shields.io/badge/Version-2026.6.5-47848F" alt="Version">
 </p>
 
 <p align="center">
@@ -28,17 +28,18 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 
 | Platform | Installer | Size (approx.) |
 |----------|-----------|----------------|
-| **macOS (Apple Silicon)** | [CogniBridge-2026.5.25-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge-2026.5.25-arm64.dmg) | ~494 MB |
-| **macOS (Intel)** | [CogniBridge-2026.5.25-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge-2026.5.25-x64.dmg) | ~467 MB |
-| **Windows (x64)** | [CogniBridge.Setup.2026.5.25.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge.Setup.2026.5.25.exe) | ~487 MB |
+| **macOS (Apple Silicon)** | [CogniBridge-2026.6.5-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.05/CogniBridge-2026.6.5-arm64.dmg) | ~496 MB |
+| **macOS (Intel)** | [CogniBridge-2026.6.5-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.05/CogniBridge-2026.6.5-x64.dmg) | ~468 MB |
+| **Windows (x64)** | [CogniBridge.Setup.2026.6.5.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.05/CogniBridge.Setup.2026.6.5.exe) | ~487 MB |
 
 - **All versions & release notes:** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**Latest (2026.05.25) highlights**
+**Latest (2026.6.5) highlights**
 
-1. Improved product–market positioning analysis  
-2. Deeper target-customer research  
-3. Competitive product research and analysis  
+1. Virtual agent work status display and virtual agent team collaboration  
+2. Default LLM traffic routes through Zhiqiao gateway  
+3. Customer acquisition closed loop with step-by-step guidance at each stage  
+4. Added WhatsApp official broadcast channel  
 
 **Requirements:** macOS 11+ (Intel or Apple Silicon) or Windows 10/11 (64-bit). Internet required for AI and optional IM features.
 
@@ -92,17 +93,18 @@ Optional agent engine: [OpenClaw](https://github.com/openclaw/openclaw) (version
 
 | 平台 | 安装包 | 大小（约） |
 |------|--------|------------|
-| **macOS（Apple 芯片）** | [CogniBridge-2026.5.25-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge-2026.5.25-arm64.dmg) | ~494 MB |
-| **macOS（Intel）** | [CogniBridge-2026.5.25-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge-2026.5.25-x64.dmg) | ~467 MB |
-| **Windows（64 位）** | [CogniBridge.Setup.2026.5.25.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.05.25/CogniBridge.Setup.2026.5.25.exe) | ~487 MB |
+| **macOS（Apple 芯片）** | [CogniBridge-2026.6.5-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.05/CogniBridge-2026.6.5-arm64.dmg) | ~496 MB |
+| **macOS（Intel）** | [CogniBridge-2026.6.5-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.05/CogniBridge-2026.6.5-x64.dmg) | ~468 MB |
+| **Windows（64 位）** | [CogniBridge.Setup.2026.6.5.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.05/CogniBridge.Setup.2026.6.5.exe) | ~487 MB |
 
 - **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**当前最新版 2026.05.25 更新摘要**
+**当前最新版 2026.6.5 更新摘要**
 
-1. 优化用户产品市场定位分析  
-2. 增加目标客户深度调研  
-3. 增加竞争产品调研和分析  
+1. 虚拟人工作状态显示和虚拟人群工作  
+2. 默认大模型流量走智桥网关  
+3. 增加获客闭环，环节每个节点做指导  
+4. 增加了 WhatsApp 官方群发通道  
 
 **系统要求：** macOS 11+（Intel 或 Apple 芯片）或 Windows 10/11（64 位）；使用 AI 与 IM 功能需联网。
 
