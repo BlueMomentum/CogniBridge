@@ -36,10 +36,10 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 
 **Latest (2026.6.22) highlights**
 
-1. Optimized daily task usage and IM bot Q&A replies  
-2. Added local knowledge base import and usage  
-3. Improved task completion detection  
-4. Fixed IM bot connection and reply bugs  
+1. Optimized daily task usage and IM bot Q&A replies.  
+2. Added local knowledge base import and usage.  
+3. Improved task completion detection.  
+4. Fixed IM bot connection and reply bugs.  
 
 **Requirements:** macOS 11+ (Intel or Apple Silicon) or Windows 10/11 (64-bit). Internet required for AI and optional IM features.
 
