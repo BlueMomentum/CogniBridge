@@ -30,7 +30,7 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 |----------|-----------|----------------|
 | **macOS (Apple Silicon)** | [CogniBridge-2026.7.1-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-arm64.dmg) | ~538 MB |
 | **macOS (Intel)** | [CogniBridge-2026.7.1-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-x64.dmg) | ~506 MB |
-| **Windows (x64)** | [CogniBridge Setup 2026.7.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge%20Setup%202026.7.1.exe) | ~523 MB |
+| **Windows (x64)** | [CogniBridge.Setup.2026.7.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge.Setup.2026.7.1.exe) | ~523 MB |
 
 - **All versions & release notes:** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
@@ -94,7 +94,7 @@ Optional agent engine: [OpenClaw](https://github.com/openclaw/openclaw) (version
 |------|--------|------------|
 | **macOS（Apple 芯片）** | [CogniBridge-2026.7.1-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-arm64.dmg) | ~538 MB |
 | **macOS（Intel）** | [CogniBridge-2026.7.1-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-x64.dmg) | ~506 MB |
-| **Windows（64 位）** | [CogniBridge Setup 2026.7.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge%20Setup%202026.7.1.exe) | ~523 MB |
+| **Windows（64 位）** | [CogniBridge.Setup.2026.7.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge.Setup.2026.7.1.exe) | ~523 MB |
 
 - **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
