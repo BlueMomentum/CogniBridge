@@ -7,7 +7,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-brightgreen" alt="Platform">
-  <img src="https://img.shields.io/badge/Version-2026.6.22-47848F" alt="Version">
+  <img src="https://img.shields.io/badge/Version-2026.7.1-47848F" alt="Version">
 </p>
 
 <p align="center">
@@ -28,18 +28,17 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 
 | Platform | Installer | Size (approx.) |
 |----------|-----------|----------------|
-| **macOS (Apple Silicon)** | [CogniBridge-2026.6.22-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.22/CogniBridge-2026.6.22-arm64.dmg) | ~516 MB |
-| **macOS (Intel)** | [CogniBridge-2026.6.22-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.22/CogniBridge-2026.6.22-x64.dmg) | ~489 MB |
-| **Windows (x64)** | [CogniBridge.Setup.2026.6.22.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.22/CogniBridge.Setup.2026.6.22.exe) | ~505 MB |
+| **macOS (Apple Silicon)** | [CogniBridge-2026.7.1-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-arm64.dmg) | ~538 MB |
+| **macOS (Intel)** | [CogniBridge-2026.7.1-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-x64.dmg) | ~506 MB |
+| **Windows (x64)** | [CogniBridge Setup 2026.7.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge%20Setup%202026.7.1.exe) | ~523 MB |
 
 - **All versions & release notes:** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**Latest (2026.6.22) highlights**
+**Latest (2026.7.1) highlights**
 
-1. Optimized daily task usage and IM bot Q&A replies.  
-2. Added local knowledge base import and usage.  
-3. Improved task completion detection.  
-4. Fixed IM bot connection and reply bugs.  
+1. Improved task-processing display items for clearer progress feedback.  
+2. Optimized task processing flow and automatic service restart on timeout.  
+3. Fixed proxy-related network connection issues.  
 
 **Requirements:** macOS 11+ (Intel or Apple Silicon) or Windows 10/11 (64-bit). Internet required for AI and optional IM features.
 
@@ -93,18 +92,17 @@ Optional agent engine: [OpenClaw](https://github.com/openclaw/openclaw) (version
 
 | 平台 | 安装包 | 大小（约） |
 |------|--------|------------|
-| **macOS（Apple 芯片）** | [CogniBridge-2026.6.22-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.22/CogniBridge-2026.6.22-arm64.dmg) | ~516 MB |
-| **macOS（Intel）** | [CogniBridge-2026.6.22-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.22/CogniBridge-2026.6.22-x64.dmg) | ~489 MB |
-| **Windows（64 位）** | [CogniBridge.Setup.2026.6.22.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.06.22/CogniBridge.Setup.2026.6.22.exe) | ~505 MB |
+| **macOS（Apple 芯片）** | [CogniBridge-2026.7.1-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-arm64.dmg) | ~538 MB |
+| **macOS（Intel）** | [CogniBridge-2026.7.1-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-x64.dmg) | ~506 MB |
+| **Windows（64 位）** | [CogniBridge Setup 2026.7.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge%20Setup%202026.7.1.exe) | ~523 MB |
 
 - **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**当前最新版 2026.6.22 更新摘要**
+**当前最新版 2026.7.1 更新摘要**
 
-1. 日常任务使用和 IM 机器人回复问答优化  
-2. 增加了本地知识库导入和使用  
-3. 任务结束判断优化  
-4. IM 机器人连接和回复 bug 修改  
+1. 任务处理过程中的显示条目优化  
+2. 优化任务处理流程，优化服务超时自启动  
+3. proxy 相关网络连接问题修复  
 
 **系统要求：** macOS 11+（Intel 或 Apple 芯片）或 Windows 10/11（64 位）；使用 AI 与 IM 功能需联网。
 
