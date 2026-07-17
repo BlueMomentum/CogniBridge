@@ -7,7 +7,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-brightgreen" alt="Platform">
-  <img src="https://img.shields.io/badge/Version-2026.7.1-47848F" alt="Version">
+  <img src="https://img.shields.io/badge/Version-2026.7.17-47848F" alt="Version">
 </p>
 
 <p align="center">
@@ -28,17 +28,23 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 
 | Platform | Installer | Size (approx.) |
 |----------|-----------|----------------|
-| **macOS (Apple Silicon)** | [CogniBridge-2026.7.1-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-arm64.dmg) | ~538 MB |
-| **macOS (Intel)** | [CogniBridge-2026.7.1-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-x64.dmg) | ~506 MB |
-| **Windows (x64)** | [CogniBridge.Setup.2026.7.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge.Setup.2026.7.1.exe) | ~523 MB |
+| **macOS (Apple Silicon)** | [CogniBridge-2026.7.17-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge-2026.7.17-arm64.dmg) | ~539 MB |
+| **macOS (Intel)** | [CogniBridge-2026.7.17-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge-2026.7.17-x64.dmg) | ~508 MB |
+| **Windows (x64)** | [CogniBridge Setup 2026.7.17.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge%20Setup%202026.7.17.exe) | ~522 MB |
 
 - **All versions & release notes:** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**Latest (2026.7.1) highlights**
+**Latest (2026.7.17) highlights**
 
-1. Improved task-processing display items for clearer progress feedback.  
-2. Optimized task processing flow and automatic service restart on timeout.  
-3. Fixed proxy-related network connection issues.  
+- Added Windows computer control, allowing agents to use the local browser and desktop to complete tasks.
+- Improved task sessions with better output display, result preview and download, history search, and attachment display.
+- Upgraded the IM assistant with Agent Reply / Human Reply modes, improved WhatsApp and WeChat message display, image previews, and history synchronization.
+- Improved scheduled tasks with clearer execution records, result display, and IM notifications for more reliable delivery.
+- Enhanced business data and email features, including filtering, display, reply, forwarding, drafts, read status, deletion, and customer lead association.
+- Added separate font-size controls for the application interface and code content.
+- Updated social media authorization platform display and upgraded OpenCLI for more stable social platform connections and authorization.
+- Improved the Chinese and English user manuals and multilingual user agreement.
+- Fixed login session expiration, 401 errors, interrupted task answers, WhatsApp QR codes, client packaging updates, and other stability issues.
 
 **Requirements:** macOS 11+ (Intel or Apple Silicon) or Windows 10/11 (64-bit). Internet required for AI and optional IM features.
 
@@ -92,17 +98,23 @@ Optional agent engine: [OpenClaw](https://github.com/openclaw/openclaw) (version
 
 | 平台 | 安装包 | 大小（约） |
 |------|--------|------------|
-| **macOS（Apple 芯片）** | [CogniBridge-2026.7.1-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-arm64.dmg) | ~538 MB |
-| **macOS（Intel）** | [CogniBridge-2026.7.1-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge-2026.7.1-x64.dmg) | ~506 MB |
-| **Windows（64 位）** | [CogniBridge.Setup.2026.7.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.01/CogniBridge.Setup.2026.7.1.exe) | ~523 MB |
+| **macOS（Apple 芯片）** | [CogniBridge-2026.7.17-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge-2026.7.17-arm64.dmg) | ~539 MB |
+| **macOS（Intel）** | [CogniBridge-2026.7.17-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge-2026.7.17-x64.dmg) | ~508 MB |
+| **Windows（64 位）** | [CogniBridge Setup 2026.7.17.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge%20Setup%202026.7.17.exe) | ~522 MB |
 
 - **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**当前最新版 2026.7.1 更新摘要**
+**当前最新版 2026.7.17 更新摘要**
 
-1. 任务处理过程中的显示条目优化  
-2. 优化任务处理流程，优化服务超时自启动  
-3. proxy 相关网络连接问题修复  
+- 新增 Windows 电脑操作能力，支持智能体调用本机浏览器及桌面操作完成相关任务。
+- 优化任务会话体验，完善任务输出展示、成果预览与下载、历史记录搜索及附件展示。
+- 升级 IM 消息助手，新增“智能体回复 / 人工回复”模式，优化 WhatsApp、微信等渠道的消息展示、图片预览与历史消息同步。
+- 优化定时任务，完善执行记录、结果展示及 IM 渠道通知，提升任务执行和消息送达稳定性。
+- 完善业务数据与邮件功能，优化数据筛选和展示，支持邮件回复、转发、草稿、已读状态、删除及客户线索关联等操作。
+- 新增界面字体大小设置，可分别调整应用界面和代码内容字号。
+- 更新社交媒体授权平台展示，并升级 OpenCLI，提升社媒平台连接与授权稳定性。
+- 完善中英文操作手册和多语言用户协议。
+- 修复登录状态失效、401 异常、任务回答中断、WhatsApp 二维码及客户端打包更新等问题，整体提升运行稳定性。
 
 **系统要求：** macOS 11+（Intel 或 Apple 芯片）或 Windows 10/11（64 位）；使用 AI 与 IM 功能需联网。
 
