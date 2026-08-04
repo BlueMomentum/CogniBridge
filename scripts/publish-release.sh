@@ -43,7 +43,6 @@ cat >"$NOTES_FILE" <<'EOF'
 |----------|------|
 | macOS (Apple Silicon) | CogniBridge-2026.8.5-arm64.dmg |
 | macOS (Intel) | CogniBridge-2026.8.5-x64.dmg |
-| macOS (Intel) update package | CogniBridge-2026.8.5-x64.dmg.zip |
 | macOS (Intel) update metadata | CogniBridge-2026.8.5-x64.dmg.blockmap |
 | Windows (x64) | CogniBridge.Setup.2026.8.5.exe |
 EOF
@@ -54,7 +53,6 @@ gh release create "$TAG" \
   --notes-file "$NOTES_FILE" \
   "$RELEASE_DIR/CogniBridge-2026.8.5-arm64.dmg" \
   "$RELEASE_DIR/CogniBridge-2026.8.5-x64.dmg" \
-  "$RELEASE_DIR/CogniBridge-2026.8.5-x64.dmg.zip" \
   "$RELEASE_DIR/CogniBridge-2026.8.5-x64.dmg.blockmap" \
   "$RELEASE_DIR/CogniBridge Setup 2026.8.5.exe"
 
