@@ -7,7 +7,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-brightgreen" alt="Platform">
-  <img src="https://img.shields.io/badge/Version-2026.7.17-47848F" alt="Version">
+  <img src="https://img.shields.io/badge/Version-2026.8.5-47848F" alt="Version">
 </p>
 
 <p align="center">
@@ -28,23 +28,20 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 
 | Platform | Installer | Size (approx.) |
 |----------|-----------|----------------|
-| **macOS (Apple Silicon)** | [CogniBridge-2026.7.17-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge-2026.7.17-arm64.dmg) | ~539 MB |
-| **macOS (Intel)** | [CogniBridge-2026.7.17-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge-2026.7.17-x64.dmg) | ~508 MB |
-| **Windows (x64)** | [CogniBridge.Setup.2026.7.17.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge.Setup.2026.7.17.exe) | ~522 MB |
+| **macOS (Apple Silicon)** | [CogniBridge-2026.8.5-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge-2026.8.5-arm64.dmg) | ~388 MB |
+| **macOS (Intel)** | [CogniBridge-2026.8.5-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge-2026.8.5-x64.dmg) | ~415 MB |
+| **Windows (x64)** | [CogniBridge Setup 2026.8.5.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge%20Setup%202026.8.5.exe) | ~412 MB |
 
 - **All versions & release notes:** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**Latest (2026.7.17) highlights**
+**Latest (2026.8.5) highlights**
 
-- Added Windows computer control, allowing agents to use the local browser and desktop to complete tasks.
-- Improved task sessions with better output display, result preview and download, history search, and attachment display.
-- Upgraded the IM assistant with Agent Reply / Human Reply modes, improved WhatsApp and WeChat message display, image previews, and history synchronization.
-- Improved scheduled tasks with clearer execution records, result display, and IM notifications for more reliable delivery.
-- Enhanced business data and email features, including filtering, display, reply, forwarding, drafts, read status, deletion, and customer lead association.
-- Added separate font-size controls for the application interface and code content.
-- Updated social media authorization platform display and upgraded OpenCLI for more stable social platform connections and authorization.
-- Improved the Chinese and English user manuals and multilingual user agreement.
-- Fixed login session expiration, 401 errors, interrupted task answers, WhatsApp QR codes, client packaging updates, and other stability issues.
+- Upgraded the OpenClaw runtime to `v2026.6.3`, with improved MCP/Skill installation, security policies, model configuration, Windows Computer Use, menus, startup speed, workspace details, internationalization, and packaging.
+- Added local knowledge bases with incremental import, PDF/DOCX/XLSX/PPTX parsing, OCR/visual recognition, full-text search, expert-linked Q&A, and material deletion/reindexing.
+- Added humanized business experts, quick actions, one-to-one expert chats, and group chats, with improved conversation history and multilingual display.
+- Added token and usage records, user-level aggregation, server-side usage statistics, and management-side usage views.
+- Improved task continuation and recovery, scheduled task history and archiving, IM synchronization, human replies, media thumbnails, and WhatsApp/Telegram/Discord delivery stability.
+- Added a customer development workspace covering lead discovery, competitor research, product diagnosis, customer outreach, stage progression, persistent data, results, and follow-up tasks.
 
 **Requirements:** macOS 11+ (Intel or Apple Silicon) or Windows 10/11 (64-bit). Internet required for AI and optional IM features.
 
@@ -98,23 +95,20 @@ Optional agent engine: [OpenClaw](https://github.com/openclaw/openclaw) (version
 
 | 平台 | 安装包 | 大小（约） |
 |------|--------|------------|
-| **macOS（Apple 芯片）** | [CogniBridge-2026.7.17-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge-2026.7.17-arm64.dmg) | ~539 MB |
-| **macOS（Intel）** | [CogniBridge-2026.7.17-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge-2026.7.17-x64.dmg) | ~508 MB |
-| **Windows（64 位）** | [CogniBridge.Setup.2026.7.17.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.07.17/CogniBridge.Setup.2026.7.17.exe) | ~522 MB |
+| **macOS（Apple 芯片）** | [CogniBridge-2026.8.5-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge-2026.8.5-arm64.dmg) | ~388 MB |
+| **macOS（Intel）** | [CogniBridge-2026.8.5-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge-2026.8.5-x64.dmg) | ~415 MB |
+| **Windows（64 位）** | [CogniBridge Setup 2026.8.5.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge%20Setup%202026.8.5.exe) | ~412 MB |
 
 - **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**当前最新版 2026.7.17 更新摘要**
+**当前最新版 2026.8.5 更新摘要**
 
-- 新增 Windows 电脑操作能力，支持智能体调用本机浏览器及桌面操作完成相关任务。
-- 优化任务会话体验，完善任务输出展示、成果预览与下载、历史记录搜索及附件展示。
-- 升级 IM 消息助手，新增“智能体回复 / 人工回复”模式，优化 WhatsApp、微信等渠道的消息展示、图片预览与历史消息同步。
-- 优化定时任务，完善执行记录、结果展示及 IM 渠道通知，提升任务执行和消息送达稳定性。
-- 完善业务数据与邮件功能，优化数据筛选和展示，支持邮件回复、转发、草稿、已读状态、删除及客户线索关联等操作。
-- 新增界面字体大小设置，可分别调整应用界面和代码内容字号。
-- 更新社交媒体授权平台展示，并升级 OpenCLI，提升社媒平台连接与授权稳定性。
-- 完善中英文操作手册和多语言用户协议。
-- 修复登录状态失效、401 异常、任务回答中断、WhatsApp 二维码及客户端打包更新等问题，整体提升运行稳定性。
+- OpenClaw 运行时升级至 `v2026.6.3`，增强 MCP/Skill 安装、安全策略和模型配置，并优化 Windows Computer Use、菜单、启动速度、工作区详情、国际化及打包安装体验。
+- 新增本地知识库、增量导入及 PDF/DOCX/XLSX/PPTX 多格式解析，支持 OCR/视觉识别、全文检索、专家关联问答和资料删除/重建索引。
+- 新增拟人化业务专家、快捷操作、专家单聊和群聊能力，优化专家会话展示、历史记录及多语言体验。
+- 增加 Token/用量记录、按用户聚合展示、服务端用量统计及管理端数据查看能力。
+- 提升任务续接、异常结束、空回复恢复、定时任务历史与归档、IM 会话同步、人工回复、媒体缩略图及 WhatsApp/Telegram/Discord 等通道稳定性。
+- 新增客户开发闭环工作台，覆盖线索发现、竞品调研、产品诊断、客户开发、阶段推进、数据持久化、结果沉淀及后续跟进任务。
 
 **系统要求：** macOS 11+（Intel 或 Apple 芯片）或 Windows 10/11（64 位）；使用 AI 与 IM 功能需联网。
 
