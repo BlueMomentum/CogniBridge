@@ -7,7 +7,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-brightgreen" alt="Platform">
-  <img src="https://img.shields.io/badge/Version-2026.8.5-47848F" alt="Version">
+  <img src="https://img.shields.io/badge/Version-2026.8.28-47848F" alt="Version">
 </p>
 
 <p align="center">
@@ -28,20 +28,19 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 
 | Platform | Installer | Size (approx.) |
 |----------|-----------|----------------|
-| **macOS (Apple Silicon)** | [CogniBridge-2026.8.5-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge-2026.8.5-arm64.dmg) | ~388 MB |
-| **macOS (Intel)** | [CogniBridge-2026.8.5-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge-2026.8.5-x64.dmg) | ~415 MB |
-| **Windows (x64)** | [CogniBridge.Setup.2026.8.5.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge.Setup.2026.8.5.exe) | ~412 MB |
+| **macOS (Apple Silicon)** | [CogniBridge-2026.8.28-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.28/CogniBridge-2026.8.28-arm64.dmg) | ~413 MB |
+| **Windows (x64)** | [CogniBridge.Setup.2026.8.28.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.28/CogniBridge.Setup.2026.8.28.exe) | ~442 MB |
 
 - **All versions & release notes:** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**Latest (2026.8.5) highlights**
+**Latest (2026.8.28) highlights**
 
-- Upgraded the OpenClaw runtime to `v2026.6.3`, with improved MCP/Skill installation, security policies, model configuration, Windows Computer Use, menus, startup speed, workspace details, internationalization, and packaging.
-- Added local knowledge bases with incremental import, PDF/DOCX/XLSX/PPTX parsing, OCR/visual recognition, full-text search, expert-linked Q&A, and material deletion/reindexing.
-- Added humanized business experts, quick actions, one-to-one expert chats, and group chats, with improved conversation history and multilingual display.
-- Added token and usage records, user-level aggregation, server-side usage statistics, and management-side usage views.
-- Improved task continuation and recovery, scheduled task history and archiving, IM synchronization, human replies, media thumbnails, and WhatsApp/Telegram/Discord delivery stability.
-- Added a customer development workspace covering lead discovery, competitor research, product diagnosis, customer outreach, stage progression, persistent data, results, and follow-up tasks.
+- Completed the multi-mailbox loop: multi-account sync, threads, rich text, reply/forward, and attachments.
+- Emails can link to customers, leads, opportunities, and orders, with AI drafts and send confirmation.
+- Expanded the customer workspace with relationship cases, journeys, interactions, and market insights.
+- Improved scheduled-task and IM delivery reliability.
+- Recover interrupted tasks, Gateway sessions, and IM sessions.
+- Stronger account security: company accounts, username login, roles, and password changes.
 
 **Requirements:** macOS 11+ (Intel or Apple Silicon) or Windows 10/11 (64-bit). Internet required for AI and optional IM features.
 
@@ -95,20 +94,19 @@ Optional agent engine: [OpenClaw](https://github.com/openclaw/openclaw) (version
 
 | 平台 | 安装包 | 大小（约） |
 |------|--------|------------|
-| **macOS（Apple 芯片）** | [CogniBridge-2026.8.5-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge-2026.8.5-arm64.dmg) | ~388 MB |
-| **macOS（Intel）** | [CogniBridge-2026.8.5-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge-2026.8.5-x64.dmg) | ~415 MB |
-| **Windows（64 位）** | [CogniBridge.Setup.2026.8.5.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.05/CogniBridge.Setup.2026.8.5.exe) | ~412 MB |
+| **macOS（Apple 芯片）** | [CogniBridge-2026.8.28-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.28/CogniBridge-2026.8.28-arm64.dmg) | ~413 MB |
+| **Windows（64 位）** | [CogniBridge.Setup.2026.8.28.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.08.28/CogniBridge.Setup.2026.8.28.exe) | ~442 MB |
 
 - **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**当前最新版 2026.8.5 更新摘要**
+**当前最新版 2026.8.28 更新摘要**
 
-- OpenClaw 运行时升级至 `v2026.6.3`，增强 MCP/Skill 安装、安全策略和模型配置，并优化 Windows Computer Use、菜单、启动速度、工作区详情、国际化及打包安装体验。
-- 新增本地知识库、增量导入及 PDF/DOCX/XLSX/PPTX 多格式解析，支持 OCR/视觉识别、全文检索、专家关联问答和资料删除/重建索引。
-- 新增拟人化业务专家、快捷操作、专家单聊和群聊能力，优化专家会话展示、历史记录及多语言体验。
-- 增加 Token/用量记录、按用户聚合展示、服务端用量统计及管理端数据查看能力。
-- 提升任务续接、异常结束、空回复恢复、定时任务历史与归档、IM 会话同步、人工回复、媒体缩略图及 WhatsApp/Telegram/Discord 等通道稳定性。
-- 新增客户开发闭环工作台，覆盖线索发现、竞品调研、产品诊断、客户开发、阶段推进、数据持久化、结果沉淀及后续跟进任务。
+- 完善多邮箱闭环：多账号同步、线程、富文本、回复/转发与附件。
+- 邮件可关联客户、线索、商机和订单，支持 AI 草稿与发送确认。
+- 扩展客户工作台：关系案例、身份旅程、互动记录与市场洞察。
+- 提升定时任务与 IM 投递可靠性。
+- 增强中断任务、Gateway 与 IM Session 故障恢复。
+- 加强账号安全：公司账号、用户名登录、角色权限与密码变更。
 
 **系统要求：** macOS 11+（Intel 或 Apple 芯片）或 Windows 10/11（64 位）；使用 AI 与 IM 功能需联网。
 
