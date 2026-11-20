@@ -7,7 +7,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-brightgreen" alt="Platform">
-  <img src="https://img.shields.io/badge/Version-2026.10.1-47848F" alt="Version">
+  <img src="https://img.shields.io/badge/Version-2026.11.20-47848F" alt="Version">
 </p>
 
 <p align="center">
@@ -28,30 +28,33 @@ You can also drive it from your phone via **Telegram, Discord, DingTalk, or Feis
 
 | Platform | Installer | Size (approx.) |
 |----------|-----------|----------------|
-| **macOS (Apple Silicon)** | [CogniBridge-2026.10.1-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.10.01/CogniBridge-2026.10.1-arm64.dmg) | ~411 MB |
-| **Windows (x64)** | [CogniBridge.Setup.2026.10.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.10.01/CogniBridge.Setup.2026.10.1.exe) | ~441 MB |
+| **macOS (Apple Silicon)** | [CogniBridge-2026.11.20-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.11.20/CogniBridge-2026.11.20-arm64.dmg) | ~633 MB |
+| **macOS (Intel)** | [CogniBridge-2026.11.20-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.11.20/CogniBridge-2026.11.20-x64.dmg) | ~645 MB |
+| **Windows (x64)** | [CogniBridge.Setup.2026.11.20.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.11.20/CogniBridge.Setup.2026.11.20.exe) | ~621 MB |
 
 - **All versions & release notes:** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**Latest (2026.10.1) highlights**
+**Latest (2026.11.20) highlights**
 
-- Customer actions follow Ontology. Opening a customer shows the current state and next step; confirming updates the state, record, and next step together. Email is draft-only and needs confirmation before sending.
-- Steadier customer development. After sending, the flow waits for a reply instead of revising the same draft; radar filters noisy leads, and bounces stop further outreach.
-- Zhiyuan cloud knowledge base. Use Zhiyuan agents in CogniBridge by typing @agent name, or let the question choose one. Local materials stay on device.
-- IM supports multiple accounts. Messages and scheduled tasks go to the matching account, and conversation summaries can be viewed across channels.
-- Account and interface: coin top-up and history, English UI, and custom logo, product name, and assistant nickname.
-- Stability: scheduled tasks can be edited again, and model timeout, registration, and startup issues are fixed.
+1. **Cowork engine**: DSH is now the default. Installers no longer bundle OpenClaw by default.
+2. **Role-based workspace**: Sales, academic operations, and customer support staff see only the tasks, projects, resources, and deliverables they have permission to access.
+3. **Work record sync**: Manage tasks, projects, and deliverables on the desktop and sync them with the Zhiyuan workspace.
+4. **Knowledge and Data**: Switch between local and cloud knowledge bases and business data such as customers and orders.
+5. **Browser handoff**: Take over from the AI, return control, or stop the operation at any time.
+6. **Messaging improvements**: Improved account management, QR-code pairing, and message history. Connection state and conversations are kept separate by account.
+7. **Scheduled task migration**: Migrate legacy tasks. The app prompts you to confirm recipients when they need to be checked again.
+8. **Desktop improvements**: Better sidebar and chat layouts in narrow windows and improved Windows installer compatibility.
 
 **Requirements:** macOS 11+ (Intel or Apple Silicon) or Windows 10/11 (64-bit). Internet required for AI and optional IM features.
 
 ### Key features
 
-- **Cowork mode** — Agent runs tools, files, and commands locally or in an OpenClaw sandbox; every sensitive action needs your approval  
+- **Cowork mode** — Runs on DSH by default; sensitive actions need your approval
 - **Built-in Skills** — Office docs (Word/Excel/PPT/PDF), web search, Playwright automation, video (Remotion), email (IMAP/SMTP), and more  
 - **Scheduled tasks** — Cron-style jobs via chat or GUI (news digests, inbox cleanup, reports, etc.)  
 - **Persistent memory** — Learns preferences and facts across sessions (local SQLite)  
 - **IM remote control** — DingTalk, Feishu, Telegram, Discord, and more  
-- **Cross-platform** — macOS (Intel + ARM) and Windows; data stays on your device  
+- **Cross-platform** — macOS (Intel + ARM) and Windows
 
 ### Quick start (end users)
 
@@ -94,30 +97,33 @@ Optional agent engine: [OpenClaw](https://github.com/openclaw/openclaw) (version
 
 | 平台 | 安装包 | 大小（约） |
 |------|--------|------------|
-| **macOS（Apple 芯片）** | [CogniBridge-2026.10.1-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.10.01/CogniBridge-2026.10.1-arm64.dmg) | ~411 MB |
-| **Windows（64 位）** | [CogniBridge.Setup.2026.10.1.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.10.01/CogniBridge.Setup.2026.10.1.exe) | ~441 MB |
+| **macOS（Apple 芯片）** | [CogniBridge-2026.11.20-arm64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.11.20/CogniBridge-2026.11.20-arm64.dmg) | ~633 MB |
+| **macOS（Intel 芯片）** | [CogniBridge-2026.11.20-x64.dmg](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.11.20/CogniBridge-2026.11.20-x64.dmg) | ~645 MB |
+| **Windows（64 位）** | [CogniBridge.Setup.2026.11.20.exe](https://github.com/BlueMomentum/CogniBridge/releases/download/v2026.11.20/CogniBridge.Setup.2026.11.20.exe) | ~621 MB |
 
 - **全部版本与更新说明：** [GitHub Releases](https://github.com/BlueMomentum/CogniBridge/releases)
 
-**当前最新版 2026.10.1 更新摘要**
+**当前最新版 2026.11.20 更新摘要**
 
-- 客户动作按 Ontology 组织。打开客户即可看到当前状态和下一步，确认后状态、记录和下一步一起更新。邮件只出草稿，发出前需人工确认。
-- 客户开发更稳。发信后进入等待回复，不再反复改同一封草稿；雷达过滤噪声线索，退信停止继续触达。
-- 支持知源云端知识库。可在智桥使用知源智能体干活，输入 @智能体名 指定，或按问题自动选用。本地资料不会上传到云端。
-- 即时通讯支持多账号。消息和定时任务投递到对应账号，会话总结可跨渠道查看。
-- 账户与界面。支持金币充值与充值记录、英文界面，以及自定义 Logo、产品名和助手昵称。
-- 稳定性。定时任务可重新编辑，并修复了模型超时、注册和启动等问题。
+1. **AI 协作引擎升级**：Cowork 默认切换至 DSH，安装包默认不再内置 OpenClaw。
+2. **个人工作台按岗位展示**：销售、教务、客服登录后，可查看各自有权限的任务、项目、资料和成果。
+3. **工作记录支持同步**：任务、项目和成果可在桌面端维护，并与知源工作台同步。
+4. **知识与业务数据统一入口**：可在「知识和数据」中切换本地知识库、云知识库，以及客户、订单等业务数据。
+5. **内置浏览器支持手动接管**：AI 操作网页时，用户可以随时接管、交还控制或停止操作。
+6. **即时通讯体验升级**：改进渠道账号管理、扫码连接和历史消息查看，按账号隔离连接状态和会话记录。
+7. **旧版自动化任务迁移**：可识别并迁移旧版定时任务，需要重新核对投递对象的任务会提示确认。
+8. **优化桌面端体验**：改善窄窗口下的侧栏和对话布局，并更新 Windows 安装包的打包兼容性。
 
 **系统要求：** macOS 11+（Intel 或 Apple 芯片）或 Windows 10/11（64 位）；使用 AI 与 IM 功能需联网。
 
 ### 核心特性
 
-- **Cowork 协作** — 本地或 OpenClaw 沙箱执行；文件、终端、网络等操作需权限确认  
+- **Cowork 协作** — 默认使用 DSH 引擎；敏感操作需权限确认
 - **内置 Skill** — Office 文档、网页搜索、Playwright、Remotion 视频、IMAP/SMTP 邮件等  
 - **定时任务** — 对话或界面创建 Cron 任务（资讯汇总、邮箱整理、周期报告等）  
 - **持久记忆** — 跨会话记住偏好与事实（本地 SQLite，数据不出设备）  
 - **IM 远控** — 钉钉、飞书、Telegram、Discord 等  
-- **跨平台** — macOS / Windows；业务数据本地化存储  
+- **跨平台** — 支持 macOS（Apple 芯片和 Intel 芯片）及 Windows
 
 ### 快速上手（终端用户）
 

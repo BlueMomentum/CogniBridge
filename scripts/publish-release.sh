@@ -5,10 +5,15 @@ set -euo pipefail
 # Prerequisites: gh auth login (or GH_TOKEN set)
 
 REPO="BlueMomentum/CogniBridge"
-TAG="v2026.10.01"
-TITLE="CogniBridge 2026.10.1"
+TAG="v2026.11.20"
+TITLE="CogniBridge 2026.11.20"
 RELEASE_DIR="${RELEASE_DIR:-/Users/macbook/projects/cogni_bridge/cogni_bridge/release}"
 REPO_DIR="${REPO_DIR:-$(cd "$(dirname "$0")/.." && pwd)}"
+ASSETS=(
+  "$RELEASE_DIR/CogniBridge-2026.11.20-arm64.dmg"
+  "$RELEASE_DIR/CogniBridge-2026.11.20-x64.dmg"
+  "$RELEASE_DIR/CogniBridge Setup 2026.11.20.exe"
+)
 
 if ! gh auth status >/dev/null 2>&1; then
   echo "Error: gh is not authenticated. Run: gh auth login" >&2
@@ -17,40 +22,55 @@ fi
 
 cd "$REPO_DIR"
 
-if ! git diff --quiet -- README.md scripts/publish-release.sh || ! git diff --cached --quiet -- README.md scripts/publish-release.sh; then
-  git add README.md scripts/publish-release.sh
-  git commit -m "Update README for CogniBridge 2026.10.1 release"
-fi
-
-git push origin main
+for asset in "${ASSETS[@]}"; do
+  if [[ ! -s "$asset" ]]; then
+    echo "Error: missing or empty installer: $asset" >&2
+    exit 1
+  fi
+done
 
 NOTES_FILE="$(mktemp)"
+trap 'rm -f "$NOTES_FILE"' EXIT
 cat >"$NOTES_FILE" <<'EOF'
-## CogniBridge 2026.10.1
+## 智桥 2026.11.20 更新说明
 
-### 更新内容 / What's new
+1. **AI 协作引擎升级**：Cowork 默认切换至 DSH，安装包默认不再内置 OpenClaw。
+2. **个人工作台按岗位展示**：销售、教务、客服登录后，可查看各自有权限的任务、项目、资料和成果。
+3. **工作记录支持同步**：任务、项目和成果可在桌面端维护，并与知源工作台同步。
+4. **知识与业务数据统一入口**：可在「知识和数据」中切换本地知识库、云知识库，以及客户、订单等业务数据。
+5. **内置浏览器支持手动接管**：AI 操作网页时，用户可以随时接管、交还控制或停止操作。
+6. **即时通讯体验升级**：改进渠道账号管理、扫码连接和历史消息查看，按账号隔离连接状态和会话记录。
+7. **旧版自动化任务迁移**：可识别并迁移旧版定时任务，需要重新核对投递对象的任务会提示确认。
+8. **优化桌面端体验**：改善窄窗口下的侧栏和对话布局，并更新 Windows 安装包的打包兼容性。
 
-1. 客户动作按 Ontology 组织。打开客户即可看到当前状态和下一步，确认后状态、记录和下一步一起更新。邮件只出草稿，发出前需人工确认。 / Customer actions follow Ontology. Opening a customer shows the current state and next step; confirming updates the state, record, and next step together. Email is draft-only and needs confirmation before sending.
-2. 客户开发更稳。发信后进入等待回复，不再反复改同一封草稿；雷达过滤噪声线索，退信停止继续触达。 / Steadier customer development. After sending, the flow waits for a reply instead of revising the same draft; radar filters noisy leads, and bounces stop further outreach.
-3. 支持知源云端知识库。可在智桥使用知源智能体干活，输入 @智能体名 指定，或按问题自动选用。本地资料不会上传到云端。 / Zhiyuan cloud knowledge base. Use Zhiyuan agents in CogniBridge by typing @agent name, or let the question choose one. Local materials stay on device.
-4. 即时通讯支持多账号。消息和定时任务投递到对应账号，会话总结可跨渠道查看。 / IM supports multiple accounts. Messages and scheduled tasks go to the matching account, and conversation summaries can be viewed across channels.
-5. 账户与界面。支持金币充值与充值记录、英文界面，以及自定义 Logo、产品名和助手昵称。 / Account and interface: coin top-up and history, English UI, and custom logo, product name, and assistant nickname.
-6. 稳定性。定时任务可重新编辑，并修复了模型超时、注册和启动等问题。 / Stability: scheduled tasks can be edited again, and model timeout, registration, and startup issues are fixed.
+## What's new in CogniBridge 2026.11.20
+
+1. **Cowork engine**: DSH is now the default. Installers no longer bundle OpenClaw by default.
+2. **Role-based workspace**: Sales, academic operations, and customer support staff see only the tasks, projects, resources, and deliverables they have permission to access.
+3. **Work record sync**: Manage tasks, projects, and deliverables on the desktop and sync them with the Zhiyuan workspace.
+4. **Knowledge and Data**: Switch between local and cloud knowledge bases and business data such as customers and orders.
+5. **Browser handoff**: Take over from the AI, return control, or stop the operation at any time.
+6. **Messaging improvements**: Improved account management, QR-code pairing, and message history. Connection state and conversations are kept separate by account.
+7. **Scheduled task migration**: Migrate legacy tasks. The app prompts you to confirm recipients when they need to be checked again.
+8. **Desktop improvements**: Better sidebar and chat layouts in narrow windows and improved Windows installer compatibility.
 
 ### 安装包 / Downloads
 
 | Platform | File |
 |----------|------|
-| macOS (Apple Silicon) | CogniBridge-2026.10.1-arm64.dmg |
-| Windows (x64) | CogniBridge.Setup.2026.10.1.exe |
+| macOS (Apple Silicon) | CogniBridge-2026.11.20-arm64.dmg |
+| macOS (Intel) | CogniBridge-2026.11.20-x64.dmg |
+| Windows (x64) | CogniBridge.Setup.2026.11.20.exe |
 EOF
 
 gh release create "$TAG" \
   --repo "$REPO" \
+  --draft \
   --title "$TITLE" \
   --notes-file "$NOTES_FILE" \
-  "$RELEASE_DIR/CogniBridge-2026.10.1-arm64.dmg" \
-  "$RELEASE_DIR/CogniBridge Setup 2026.10.1.exe"
+  "${ASSETS[@]}"
 
-rm -f "$NOTES_FILE"
-echo "Release $TAG published: https://github.com/$REPO/releases/tag/$TAG"
+gh release view "$TAG" --repo "$REPO" --json assets \
+  --jq '.assets[] | [.name, .size, .state] | @tsv'
+
+echo "Draft $TAG uploaded. Verify the assets, push the release documentation to main, and publish the draft."
